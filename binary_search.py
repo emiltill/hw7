@@ -15,6 +15,7 @@ def binary_search(num, num_list):
 
         elif middle == num:
             print(f"Index of {middle} is {middle_index}")
+            break
 
         elif middle > num:
             high = middle_index - 1
@@ -23,6 +24,7 @@ def binary_search(num, num_list):
             middle = num_list[middle_index]
             if middle == num:
                 print(f"Index of {middle} is {middle_index}")
+                break
 
         elif middle < num:
             low = middle_index + 1
@@ -32,6 +34,7 @@ def binary_search(num, num_list):
             middle = num_list[middle_index]
             if middle == num:
                 print(f"Index of {middle} is {middle_index}")
+                break
 
 
 numbers = [6, 99, 45, 34, 78, 16, 33, 51, 67]
